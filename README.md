@@ -14,7 +14,8 @@
 ![alt text](image-2.png)
 
 * Contoh lainnya untuk database connection dan query. Buat file dengan nama database.php
-```
+
+```php
 <?php
 class Database {
     protected $host;
@@ -140,7 +141,7 @@ class Database {
 ### - Database di ubah menggunakan class library
 * [database.php](project/config/database.php)
 
-```
+```php
 <?php
 /**
  * Class Database
@@ -248,7 +249,7 @@ class Database {
 ### - Auth dan Form di ubah menggunakan class library
 * [auth.php](project/lib/auth.php)
 
-```
+```php
 <?php
 /**
  * Class Auth
@@ -302,7 +303,7 @@ class Auth {
 
 * [form.php](project/lib/form.php)
 
-```
+```php
 <?php
 /**
  * Class Form
