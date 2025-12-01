@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Jika URL: /barang/edit/4
+# Maka diarahkan ke: index.php?page=barang/edit&id=4
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ index.php?page=$1/$2&id=$3 [L,QSA]
+
+# Jika URL: /barang/edit
+RewriteRule ^([^/]+)/([^/]+)/?$ index.php?page=$1/$2 [L,QSA]
+
+# Jika URL: /barang
+RewriteRule ^([^/]+)/?$ index.php?page=$1/list [L,QSA]
+
+# Jika root
+RewriteRule ^$ index.php?page=dashboard [L]
